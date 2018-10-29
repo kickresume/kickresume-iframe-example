@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kickresume API real-time preview test</title>
+</head>
+<body>
+  <form id="form" style="margin-bottom: 20px;">
+    <input id="first_name" name="first_name" placeholder="First name" value="John" />
+    <input id="last_name" name="last_name" placeholder="Last name" value="Smith" />
+    <button id="submit">Get fresh preview</button>
+  </form>
+  <script type="text/javascript" src="./resources.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+  <iframe
+    src="https://www.kickresume.com/render-preview/kickresume-iframe-example/"
+    id="kickresume-preview-iframe"
+    sandbox="allow-scripts allow-same-origin"
+    height="1122"
+    width="794"
+  ></iframe>
+</body>
+</html>
