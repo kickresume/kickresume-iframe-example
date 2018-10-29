@@ -15,13 +15,15 @@ Once an iframe is loaded on a valid origin, it will send a message with the foll
 
 You can listen for this message on window like this: `window.addEventListener("message", receiveMessage, false);`
 
-Once initialized, the iframe listens for messages of the following structure:
+Once initialized, the iframe listens for messages of the following structure: 
 ```json
 {
   "type": "cv_data",
-  "data": {} // Valid CV data object. You can find more details in our API documentation.
+  "data": {}
 }
 ```
+
+`"data"` expects a valid CV data object. You can find more details in our API documentation.
 
 You can send this message using the `postMessage` API like this:
 ```javascript
