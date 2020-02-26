@@ -6,7 +6,7 @@ function postData() {
   document.getElementById("kickresume-preview-iframe").contentWindow.postMessage({
     type: "cv_data",
     data: cv_data,
-  }, "https://www.kickresume.com");
+  }, "https://api.kickresume.com");
 }
 
 function receiveMessage(event) {
